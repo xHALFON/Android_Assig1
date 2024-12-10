@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CourseTask1</string>
+    <string name="Welcome_title">Welcome to Tic Tac Toe!</string>
+    <string name="Start_Game">Start Game</string>
+    <string name="Play_Again">Play Again</string>
+    <string name="Player_X_Turn">Player X Turn</string>
+    <string name="Go_Back_to_Main_Menu">Go Back to Main Menu"</string>
+</resources>

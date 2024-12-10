@@ -1,0 +1,87 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Main Menu Layout -->
+    <LinearLayout
+        android:id="@+id/mainMenuLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="@string/Welcome_title"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/startGameButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:text="@string/Start_Game"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    <!-- Game Screen Layout -->
+    <LinearLayout
+        android:id="@+id/gameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <!-- Existing Game Board -->
+
+        <TextView
+            android:id="@+id/statusTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="@string/Player_X_Turn"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:padding="16dp"
+            android:rowCount="3">
+            <!-- Buttons for game (same as before) -->
+        </GridLayout>
+
+        <!-- Game Status -->
+
+        <!-- Play Again Button -->
+        <Button
+            android:id="@+id/playAgainButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:text="@string/Play_Again"
+            android:textColor="@color/black"
+            android:visibility="gone" />
+
+        <!-- Go Back to Main Menu Button -->
+        <Button
+            android:id="@+id/goBackButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:text="@string/Go_Back_to_Main_Menu"
+            android:textColor="@color/black"
+            android:visibility="gone" />
+    </LinearLayout>
+</FrameLayout>
